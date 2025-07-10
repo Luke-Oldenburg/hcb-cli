@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-directory = '/'
+directory = "/"
 
 def main():
     print(r"""
@@ -27,15 +27,15 @@ def main():
             Welcome to the HCB CLI!
      """)
     while True:
-        print(directory + '> ', end='')
+        print(directory + "> ", end="")
         args = input().strip().split()
         if not args:
             continue
         match args[0].lower():
-            case 'help':
+            case "help":
                 help()
 
-            case 'exit':
+            case "exit":
                 print("Exiting the HCB CLI.")
                 exit(0)
 
